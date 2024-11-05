@@ -1,0 +1,387 @@
+/*body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}*/
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+hr{
+  color: #e91e63;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d81b60;
+  color: #333;
+
+  margin: 0;
+  background-size: cover;
+  background-position-y: 100px;
+  height: 100vh;
+}
+
+#header1{
+  background-color: rgba(223, 223, 223, 0.573);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 60px;
+  margin: 0px ;
+  text-align: right;
+}
+
+.h1{
+    text-align: center;
+    margin: 0 10px;
+}
+nav{
+    margin-left: auto;
+}
+nav a:hover {
+    color: #cd4444;
+    }
+nav a{
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Show only 3 cards in a row */
+  gap: 20px;
+  justify-content: center; /* Center the grid */
+}
+
+.product-card {
+  width: 390px; /* Set fixed width */
+  height: 515px; /* Set fixed height */
+  background-color: #ffffff;
+  border: 1px solid #020202;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px; /* Set a fixed height for images */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+  
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+.product-name {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.productbrand{
+  font-size: 1em;
+}
+
+.productrating{
+  font-size: 1em;
+}
+
+.product-price {
+  font-size: 1em;
+  color: #e91e63;
+}
+
+.product-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e91e63;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.website-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #e91e63;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.product-link:hover {
+  background-color: #d81b60;
+}
+
+
+/*search bar*/
+#brand_input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button1 {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #e91e63;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: #d81b60;
+}
+
+/*crud form*/
+/* Main Wrapper styling */
+.mainWrapper {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input and Textarea styling */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+/* Button styling */
+button {
+  margin: 5px 2px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+#btnCreate {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#btnRead {
+  background-color: #2196F3;
+  color: white;
+}
+
+#btnDelete {
+  background-color: #f44336;
+  color: white;
+}
+
+#btnUpdate {
+  background-color: #ff9800;
+  color: white;
+}
+
+/*product description*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  cursor: pointer;
+}
+
+
+/*price range*/
+#min_price{
+  width: 150px;
+  padding: 10px;
+  margin: 10px 5px;
+  margin-left: 150px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#max_price{
+  width: 150px;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button2{
+  background-color: #4CAF50;
+}
+#products {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Adjust as necessary */
+}
+
+/* Display Area */
+#displayArea {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  margin-left: 380px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#displayArea h2 {
+  text-align: center;
+  color: #ff6b6b;
+  margin-bottom: 15px;
+}
+
+/* Centering the review list */
+#reviewList {
+  list-style-type: none;
+  padding: 0;
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto; /* Centers the list */
+}
+
+#reviewList li {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#reviewList li:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul a {
+      margin: 5px 0;
+      font-size: 16px;
+  }
+
+  .mainWrapper, #displayArea {
+      width: 90%;
+  }
+
+  #reviewList {
+      width: 90%; /* Adjusts width for smaller screens */
+  }
+
+  button {
+      max-width: 80px;
+  }
+}

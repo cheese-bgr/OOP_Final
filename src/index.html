@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Beauty Finder</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header id="header1">
+
+      <input type="text" id="brand_input" placeholder="Enter Brand Name">
+      <button class="button1" onclick="buttonClicked()">Search</button>
+      <div id="productContainer"></div>
+      
+      <input type="number" id="min_price" placeholder="Min Price">
+      <input type="number" id="max_price" placeholder="Max Price">
+      <button class="button1" onclick="filterPrices()">Filter</button>
+      <div id="products"></div>
+
+      <nav>
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="crud.html">Review</a>
+        </ul>
+      </nav>
+      
+    </header><br>
+    
+    <hr><br>
+    <h1>Beauty Finder</h1>
+    <hr>
+
+    <div class="container">
+      <div id="product-grid" class="product-grid"></div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content" id="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <p id="description-text"></p>
+      </div>
+    </div>
+    
+    <script src="main.js"></script>
+  
+  </body>
+</html>
+
